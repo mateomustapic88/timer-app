@@ -67,7 +67,7 @@ const Trackers = () => {
       } else {
         await setDoc(userDocRef, { timers: updatedTimers });
       }
-    } catch (error: any) {
+    } catch (error) {
       console.error("Error syncing timers:", error);
     }
   };
@@ -107,7 +107,7 @@ const Trackers = () => {
 
       const userDocRef = doc(firestore, "users", userId);
       await updateDoc(userDocRef, { timers: updatedTimers });
-    } catch (error: any) {
+    } catch (error) {
       console.error("Error syncing timers:", error);
     }
   };
@@ -125,7 +125,7 @@ const Trackers = () => {
 
       const userDocRef = doc(firestore, "users", userId);
       await updateDoc(userDocRef, { timers: updatedTimers });
-    } catch (error: any) {
+    } catch (error) {
       console.error("Error syncing timers:", error);
     }
   };
@@ -140,7 +140,7 @@ const Trackers = () => {
 
       const userDocRef = doc(firestore, "users", userId);
       await updateDoc(userDocRef, { timers: [] });
-    } catch (error: any) {
+    } catch (error) {
       console.error("Error syncing timers:", error);
     }
   };
@@ -159,12 +159,13 @@ const Trackers = () => {
           if (userData?.timers) {
             setTimers(userData.timers);
             const activeTimer = userData.timers.find(
-              (timer: any) => timer.isActive && !timer.isPaused
+              (timer: { isActive: boolean; isPaused: boolean }) =>
+                timer.isActive && !timer.isPaused
             );
             setActiveTimer(activeTimer?.id || null);
           }
         }
-      } catch (error: any) {
+      } catch (error) {
         console.error("Error syncing timers:", error);
       }
     };
