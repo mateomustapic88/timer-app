@@ -1,0 +1,155 @@
+.history-page {
+  padding: 2rem;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 1170px;
+    color: #5f6b8a;
+    background-color: #f9f9fd;
+    height: 110px;
+    padding: 1rem;
+    border-radius: 8px;
+
+    .filter-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        font-size: 14px;
+        color: #5f6b8a;
+      }
+
+      .p-calendar,
+      .p-inputtext {
+        border: none;
+        height: 42px;
+        color: #5f6b8a;
+        background-color: white;
+      }
+
+      .p-inputtext,
+      .p-calendar input {
+        font-size: 14px;
+        color: #5f6b8a;
+        height: 42px;
+        padding: 8px;
+      }
+
+      .p-calendar .p-datepicker-trigger {
+        color: #5f6b8a;
+        border: unset;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .timers-table-container {
+    width: 100%;
+    max-width: 1170px;
+
+    .timers-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+
+      th,
+      td {
+        padding: 0.8rem;
+        text-align: left;
+        word-wrap: break-word;
+        min-width: 120px;
+      }
+
+      th {
+        background-color: #ecedf5;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+
+      .no-timers-message {
+        text-align: center;
+        font-style: italic;
+        color: #888;
+        padding: 1rem;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .timer-row {
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .timer-name-input,
+    .timer-name {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      outline: none;
+      cursor: pointer;
+      flex: 1;
+      min-width: 0;
+
+      &.timer-name-input {
+        padding: 8px;
+        border: unset;
+      }
+    }
+
+    .timer-display {
+      font-size: 18px;
+      font-weight: bold;
+      color: #4a90e2;
+      margin: 0 1.5rem;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .timer-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .p-button-icon-only {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: none;
+        box-shadow: none;
+        border: none;
+
+        &.edit-button {
+          color: #5f6b8a;
+        }
+
+        &.delete-button {
+          color: #5f6b8a;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.p-datepicker-group-container {
+  background-color: #fff;
+  cursor: pointer;
+}

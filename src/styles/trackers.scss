@@ -1,0 +1,143 @@
+.trackers-page {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1170px;
+    margin-bottom: 1.5rem;
+
+    .p-button {
+      color: #fff;
+      font-family: "Nunito Sans", sans-serif;
+      padding: 8px;
+      margin-left: 0.5rem;
+
+      &.start-timer {
+        background-color: #ff5722;
+        height: 36px;
+        border-radius: 3px;
+        border: 1px solid #ff5722;
+      }
+
+      &.reset-timers {
+        background-color: #181846;
+        height: 36px;
+        border-radius: 3px;
+        border: 1px solid #181846;
+      }
+    }
+  }
+
+  .timers-table-container {
+    max-width: 1170px;
+    width: 100%;
+    margin-top: 2rem;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+
+      thead {
+        tr {
+          background-color: #ecedf5;
+        }
+
+        th {
+          padding: 16px;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 700;
+          color: #333;
+          background-color: #ecedf5;
+        }
+      }
+
+      tbody {
+        tr {
+          display: table-row;
+          width: 100%;
+          border: 0.5px solid #ecedf5;
+          height: 70px;
+        }
+
+        td {
+          display: table-cell;
+          padding: 16px;
+          font-size: 18px;
+          color: #5f6b8a;
+          text-align: left;
+        }
+      }
+
+      th:nth-child(1),
+      td:nth-child(1) {
+        width: 20%;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: 60%;
+      }
+
+      th:nth-child(3),
+      td:nth-child(3) {
+        width: 20%;
+      }
+
+      .no-timers-message {
+        padding: 8px;
+        text-align: center;
+        font-size: 16px;
+        color: #5f6b8a;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .actions button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+
+    &.p-button-primary {
+      background-color: #ff5722;
+      color: white;
+    }
+
+    &.p-button-info {
+      background-color: #5f6b8a;
+      color: white;
+    }
+
+    &.p-button-danger {
+      background-color: #5f6b8a;
+      color: white;
+    }
+  }
+
+  .actions button:disabled {
+    background-color: #dcdcdc;
+    color: #aaa;
+  }
+}

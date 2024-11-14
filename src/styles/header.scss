@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181846;
+  color: white;
+  padding: 1rem 2rem;
+  height: 112px;
+  border-radius: 0 0 26px 26px;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+
+    .tracking-tool {
+      margin-left: 8px;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    gap: 84px;
+    font-size: 15px;
+    color: #c4c5d7;
+
+    .trackers-link,
+    .history-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    a {
+      color: #c4c5d7;
+      text-decoration: none;
+    }
+
+    .logout-link {
+      color: #c4c5d7;
+      cursor: pointer;
+      font-size: 15px;
+      text-decoration: none;
+      margin-right: 64px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}
