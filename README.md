@@ -21,7 +21,7 @@ App is deployed on Vercel -> [https://timer-app-mauve-pi.vercel.app](https://tim
 1. **Clone the repository**:
 
    ```bash
-   git clone [<repository-url>](https://github.com/mateomustapic88/timer-app)
+   git clone [https://github.com/mateomustapic88/timer-app](https://github.com/mateomustapic88/timer-app)
    ```
 
 2. **Install dependencies**:
