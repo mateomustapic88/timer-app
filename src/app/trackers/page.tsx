@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Button } from "primereact/button";
-import { TimerCard } from "@/components/TimerCard";
+import { TimerRow } from "@/components/TimerRow";
 import { doc, setDoc, getDoc, updateDoc } from "firebase/firestore";
 import { auth, firestore } from "../../firebase/firebaseConfig";
 import { ToastContainer, toast } from "react-toastify";
@@ -200,7 +200,7 @@ const Trackers = () => {
           <tbody>
             {timers.length > 0 ? (
               timers.map((timer) => (
-                <TimerCard
+                <TimerRow
                   key={timer.id}
                   timer={timer}
                   onStop={stopTimer}

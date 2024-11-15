@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "primereact/button";
 import "primeicons/primeicons.css";
 
-interface TimerCardProps {
+interface TimerRowProps {
   timer: {
     id: string;
     name: string;
@@ -16,13 +16,13 @@ interface TimerCardProps {
   onDelete: (id: string) => void;
 }
 
-export const TimerCard = ({
+export const TimerRow = ({
   timer,
   onStop,
   onPause,
   onEdit,
   onDelete,
-}: TimerCardProps) => {
+}: TimerRowProps) => {
   const [currentTime, setCurrentTime] = useState(timer.time);
   const [timerName, setTimerName] = useState(timer.name);
   const [isEditing, setIsEditing] = useState(false);
