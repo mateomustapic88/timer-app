@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Timer App",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </AuthProvider>
         <ToastContainer />
+        <Analytics />
       </body>
     </html>
   );

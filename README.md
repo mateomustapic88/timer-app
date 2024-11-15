@@ -12,16 +12,12 @@ This is a timer application built with Next.js. The app allows users to register
 - **Responsive Design**: Built to be responsive across devices.
 - **Firebase Integration**: Firebase used for authentication and real-time data management.
 
-
-## Deployment
-App is deployed on Vercel -> [https://timer-app-mauve-pi.vercel.app](https://timer-app-mauve-pi.vercel.app/)
-
 ## Installation
 
 1. **Clone the repository**:
 
    ```bash
-   git clone [https://github.com/mateomustapic88/timer-app](https://github.com/mateomustapic88/timer-app)
+   git clone <repository-url>
    ```
 
 2. **Install dependencies**:
