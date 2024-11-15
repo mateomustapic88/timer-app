@@ -32,7 +32,7 @@ export default function LoginPage() {
   };
 
   return (
-    <>
+    <div>
       <div className='login-container'>
         <h1>Login</h1>
         <form onSubmit={handleLogin} className='login-form'>
@@ -85,6 +85,6 @@ export default function LoginPage() {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
